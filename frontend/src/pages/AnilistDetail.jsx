@@ -1,7 +1,7 @@
 
 import { useParams } from "react-router-dom";
 
-function MovieDetail() {
+function AnilistDetail() {
   const { id } = useParams();
 
   return (
@@ -15,4 +15,4 @@ function MovieDetail() {
   );
 }
 
-export default MovieDetail;
+export default AnilistDetail;

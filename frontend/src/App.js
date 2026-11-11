@@ -6,24 +6,29 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import MovieDetail from "./pages/MovieDetail";
+import AnilistDetail from "./pages/AnilistDetail";
 import Favorites from "./pages/Favorites";
 import Profile from "./pages/Profile";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
+    
       <Navbar />
-
+<div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/movie/:id" element={<MovieDetail />} />
+        <Route path="/anilist/:id" element={<AnilistDetail />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
+      <Footer /> 
+      </div>
     </BrowserRouter>
+   
   );
 }
 
